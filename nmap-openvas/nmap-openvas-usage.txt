@@ -1,0 +1,56 @@
+1. nmap -sT -n -v --top-ports=20 192.168.56.102
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   20   880 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   28  1616 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102    
+
+2. nmap -sT -n -v --top-ports=1000 192.168.56.102
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1000 40200 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1300 77840 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102 
+ 
+
+3. nmap -sT -n -v -T4 192.168.56.102
+
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1001 40260 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1288 77100 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102 
+ 
+ 4. nmap -sT -n -v -O -sV -T4 192.168.56.102
+
+Chain INPUT (policy ACCEPT 2 packets, 812 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1348 60426 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 1 packets, 328 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1795  111K ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102  
+ 
+ 5. sudo gvm-start
+ 502.9 KiB
+ 

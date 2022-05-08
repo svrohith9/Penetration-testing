@@ -1,0 +1,1167 @@
+Script started on 2022-04-06 19:53:17-04:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="77" LINES="27"]
+                                                                             ]0;kali@kali: ~/Desktop[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32ml[39m[32ml[39m[38;2;153;153;153ms[39m[32ml[32ms[39m [35m-[39m[35m-[35ml[39m [1m[34m*[0m[39m.sh[?1l>[?2004l
+-rw-rw-rw- 1 kali kali 501 Apr  5 18:42 iptables-counters.sh
+                                                                             ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mi[24m[4mi[24m[38;2;153;153;153mfconfig[39m[24m[1m[36mi[1m[36mf[0m[39m[1m[31mi[1m[31mf[1m[31mc[0m[39m[1m[31mc[1m[31mo[0m[39m[1m[31mo[1m[31mn[0m[39m[1m[31mn[1m[31mf[0m[39m[1m[31mf[1m[31mi[0m[39m[0m[32mi[0m[32mf[0m[32mc[0m[32mo[0m[32mn[0m[32mf[0m[32mi[32mg[39m[?1l>[?2004l
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::a00:27ff:fe95:bd54  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:95:bd:54  txqueuelen 1000  (Ethernet)
+        RX packets 1  bytes 590 (590.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 19  bytes 2896 (2.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.56.101  netmask 255.255.255.0  broadcast 192.168.56.255
+        inet6 fe80::a00:27ff:fe8f:efb9  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:8f:ef:b9  txqueuelen 1000  (Ethernet)
+        RX packets 226  bytes 31156 (30.4 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 23  bytes 3982 (3.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+                                                                             ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153md DEsktop[39m[9D[24m[1m[31mc[1m[31mh[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [8D[1m[31mc[1m[31mh[1m[31mm[0m[39m[1m[31mm[1m[31mo[0m[39m[0m[32mc[0m[32mh[0m[32mm[0m[32mo[32md[39m +x [4mi[24m[4mi[4mp[24m[4mp[4mtables-counters.sh[24m[1m [0m[0m [?1l>[?2004l
+                                                                             ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mchmod[39m +x [4miptables-counters.sh[24m[29D[32mi[32mf[32mc[32mo[32mn[32mf[32mi[32mg[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [21D[?1l>[?2004l
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 10.0.2.15  netmask 255.255.255.0  broadcast 10.0.2.255
+        inet6 fe80::a00:27ff:fe95:bd54  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:95:bd:54  txqueuelen 1000  (Ethernet)
+        RX packets 1  bytes 590 (590.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 19  bytes 2896 (2.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+eth1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet 192.168.56.101  netmask 255.255.255.0  broadcast 192.168.56.255
+        inet6 fe80::a00:27ff:fe8f:efb9  prefixlen 64  scopeid 0x20<link>
+        ether 08:00:27:8f:ef:b9  txqueuelen 1000  (Ethernet)
+        RX packets 229  bytes 31702 (30.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 25  bytes 4112 (4.0 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 0  bytes 0 (0.0 B)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 0  bytes 0 (0.0 B)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+                                                                             ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32mifconfig[39m[8D[32mc[32mh[32mm[32mo[32md[39m[39m [39m+[39mx [4miptables-counters.sh[24m[29D[32mi[32mf[32mc[32mo[32mn[32mf[32mi[32mg[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [21D[8D[32ml[32ms[39m[39m [35m-[35ml[39m[39m [1m[34m*[0m[39m[39m.sh[?1l>[?2004l
+-rwxrwxrwx 1 kali kali 501 Apr  5 18:42 [0m[01;32miptables-counters.sh[0m
+                                                                             ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[32m.[39m[39m[4m.[4m/[24m[4m.[4m/[4mi[24m[24m[32m.[24m[32m/[24m[32mi[32mptables-counters.sh[39m[1m [0m[0m 192.168.56.102[?1l>[?2004l
+iptables v1.8.7 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)
+
+iptables v1.8.7 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)
+
+iptables v1.8.7 (nf_tables): Could not fetch rule set generation id: Permission denied (you must be root)
+
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                             ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31ms[0m[39m[1m[31ms[0m[39m[38;2;153;153;153mudo -i[39m[0m[32ms[32mu[39m[1m[31ms[1m[31mu[1m[31md[0m[39m[0m[4m[32ms[0m[4m[32mu[0m[4m[32md[4m[32mo[24m[39m[39m [35m-[39m[35m-[35mi[39m[?1l>[?2004l
+[sudo] password for kali: 
+                                                                             ]0;root@kali: ~[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m~[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[38;2;153;153;153mlear[39m[0m[32mc[32md[39m[39m [39m [39m [38;2;153;153;153m /var/www/html[39m[14D[39m [39mr[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153moot[39m[39mc[39md[2C
+[JCompleting `local directory'[A[0m[27m[24m[0m[39m[4Ccd r[38;2;153;153;153moot[39m[K[0m[39m[32mc[32md[39m[2C[39mh[39m [39m  [38;2;153;153;153moot[39m [39m [39m [39m [38;2;153;153;153m/var/www/html[39m[13D[39mh[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153mome[39m[39mo[39mm [39m [38;2;153;153;153mme[39m [39m [39m [38;2;153;153;153mome[39m [39m [39m [39m [38;2;153;153;153m/var/www/html[39m[13D[39m[4m/[24m[4m/[39m[4mh[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[4mh[4mo[24m[4mo[4mme[1m[4m/[0m[24m[24m/[24mh[24mo[24mm[24me[0m[24m/De[11D[39mc[39md[9C
+[J[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /home/De[K[0m[39m[11D[32mc[32md[39m[8C [4m/[4mh[4mo[4mm[4me[4m/[24m [4me[24m[24m [4mm[24m[24m [4mo[24m[24m [4mh[24m[24m [4m/[24m[24m [38;2;153;153;153mvar/www/html[39m[12D[4m/[39m[4mr[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[4mr[4mo[24m[4mo[4mo[24m[4mo[4mt[24m[4mt[4m/[24m[24m/[24mr[24mo[24mo[24mt[24m/h[10D[39mc[39md[8C
+[J[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /root/h[K[0m[39m
+[J[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /root/h[K[0m[39m[10D[32mc[32md[39m [4m/[4mr[4mo[4mo[4mt[4m/[24m [4mt[24m[24m [4mo[24m[24m [4mo[24m[24m [4mr[24m[24m [4m/[24m[24m [38;2;153;153;153mvar/www/html[39m[12D[4m/[39m[4mh[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[4mh[4mo[24m[4mo[4mm[24m[4mm[4me[24m[4me[4m/[24m[24m/[24mh[24mo[24mm[24me[24m/De [4m/[4mh[4mo[4mm[4me[4m/[24m [4me[24m[24m [4mm[24m[24m [4mo[24m[24m [4mh[24m[24m [4m/[24m[24m [38;2;153;153;153mvar/www/html[39m[12D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[38;2;153;153;153m/var/www/html[39m[13D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153m /var/www/html[39m[14D[1m[31mc[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[1m[31mc[0m[39m[38;2;153;153;153mlear[39m[0m[39m [39m [39m [39m [39m [1m[31mp[0m[39m[1m[31mp[0m[39m[38;2;153;153;153mwd[39m[1m[31mp[1m[31mw[0m[39m[0m[32mp[0m[32mw[32md[39m[?1l>[?2004l
+[J/root
+                                                                             ]0;root@kali: ~
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m~[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[38;2;153;153;153mlear[39m[0m[32mc[32md[39m[39m [39m [39m [38;2;153;153;153m /var/www/html[39m[14D[39m [39m[4m/[24m[4m/[39m[4mr[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[4mr[4mo[24m[4mo[4mo[24m[4mo[4mt[24m[4mt[4m/[24m[24m/[24mr[24mo[24mo[24mt[24m/ho[11D[39mc[39md[9C
+[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /root/ho[K[0m[39m[11D[32mc[32md[39m[9Cme/D[15D[39mc[39md[13C
+[J[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /root/home/D[K[0m[39m[15D[32mc[32md[39m[12C     [4m/[4mr[4mo[4mo[4mt[4m/[24m [4mt[24m[24m [4mo[24m[24m [4mo[24m[24m [4mr[24m[24m [4m/[24m[24m [38;2;153;153;153mvar/www/html[39m[12D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[38;2;153;153;153m/var/www/html[39m[13D[39m[4m/[39m[4mv[39m[4ma[39m[4mr[39m[4m/[39m[4mw[39m[4mw[39m[4mw[39m[4m/[39m[4mh[39m[4mt[39m[4mm[39m[4ml[24m[4mm[24m[24m [38;2;153;153;153ml[39m[4mt[24m[24m [39m [38;2;153;153;153mml[39m[4mh[24m[24m [39m [39m [38;2;153;153;153mtml[39m[4m/[24m[24m [39m [39m [39m [38;2;153;153;153mhtml[39m[4mw[24m[24m [39m [39m [39m [39m [38;2;153;153;153m/html[39m[4mw[24m[24m [39m [39m [39m [39m [39m [38;2;153;153;153mw/html[39m[4mw[24m[24m [39m [39m [39m [39m [39m [39m [38;2;153;153;153mww/html[39m[4m/[24m[24m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153mwww/html[39m[8D[4mr[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [9D[38;2;153;153;153m/www/html[39m[9D[4ma[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153mr/www/html[39m[10D[4mv[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[38;2;153;153;153mar/www/html[39m[11D[4m/[24m[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153mvar/www/html[39m[12D[24m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[38;2;153;153;153m/var/www/html[39m[13D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153m /var/www/html[39m[14D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153m /var/www/html[39m[14D[1m[31mc[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[1m[31mc[0m[39m[38;2;153;153;153mlear[39m[0m[39m [39m [39m [39m [39m [1m[31mc[0m[39m[1m[31mc[0m[39m[38;2;153;153;153mlear[39m[0m[32mc[32md[39m[39m [39m [39m [38;2;153;153;153m /var/www/html[39m[14D[39m [39m[4m.[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[4m.[4m.[24m[?1l>[?2004l
+[J                                                                             ]0;root@kali: /
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[1m[31mc[0m[39m[1m[31mc[0m[39m[38;2;153;153;153md ..[39m[0m[32mc[32md[39m[39m [39m[4m/[24m[39m [38;2;153;153;153mvar/www/html[39m[12D[4m/[39m[4mh[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[4mh[4mome[1m[4m/[0m[24m[24m/[24mh[24mo[24mm[24me[0m[24m/D[10D[39mc[39md[8C
+[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /home/D[K[0m[39m[10D[32mc[32md[39m [4m/[4mh[4mo[4mm[4me[4m/[24m [24m/[24mh[24mo[24mm[24me[24m/r[10D[39mc[39md[8C
+[J[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /home/r[K[0m[39m[10D[32mc[32md[39m [4m/[4mh[4mo[4mm[4me[4m/[24m [24m/[24mh[24mo[24mm[24me[24m/Des[12D[39mc[39md[10C
+[J[JCompleting `directory'[A[0m[27m[24m[0m[39m[4Ccd /home/Des[K[0m[39m[12D[32mc[32md[39m[9C  [4m/[4mh[4mo[4mm[4me[4m/[24m 
+[J[A[13C[4m.[4m.[24m[24m [24m [24m [24m [32mp[32mw[32md[39m[24m [24m [32me[32mx[32mi[32mt[39m[32mp[32mw[32md[39m[39m [32ml[32ms[39m[39m [32mi[32mf[32mconfig[39m[8D[32mg[32mv[32mm[32m-[32ms[32mt[32ma[32mr[32mt[39m[9D[32me[32mx[32mi[32mt[39m[39m [39m [39m [39m [39m [32mp[32mw[32md[39m[39m [32me[32mx[32mi[32mt[39m[32mg[32mv[32mm[32m-[32mstart[39m[9D[32me[32mx[32mi[32mt[39m[39m [39m [39m [39m [39m [32mg[32mv[32mm[32m-[32msetup[39m[9D[32me[32mx[32mi[32mt[39m[39m [39m [39m [39m [39m [32ma[32mp[32mt[39m[39m install gvm[15D[32mg[32mv[32mm[32m-[32ms[32mt[32ma[32mr[32mt[39m      [9D[32me[32mx[32mi[32mt[39m[39m [39m [39m [39m [39m [4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32mapt[39m install gvm [35m-y[39m[23D[24m[32mc[24m[32ml[24m[32me[24m[32ma[32mr[39m[39m [39m [39m              [39m [39m [18D[32me[32mx[32mi[32mt[39m[39m [32ms[32mc[32mr[32mi[32mpt[39m [35m-af[39m [35m--timing=wireshark_timing_3.txt[39m wireshark_3.log[58D[32ml[32ms[39m[39m [39m [39m [39m  [39m [39m [39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                 [56D[32mr[32mm[39m wireshark_timing_2.txt[12D3.log       [18D[32ms[32mc[32mr[32mi[32mp[32mt[39m [35m-[35ma[35mf[39m [35m-[35m-[35mt[35mi[35mm[35mi[35mn[35mg=wireshark_timing_2.txt[39m wireshark_3.log[58D[32ml[32ms[39m[39m [39m [39m [39m  [39m [39m [39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                 [56D[32mc[32md[39m [4m/var/www/html[24m[16D[32mc[32mp[39m[2C[4mh[4mo[4mm[4me[4m/[4mk[4ma[4ml[4mi[4m/[4mD[4me[4msktop/login.html[24m [4m/var/www/html[24m[46D[32mp[32mw[32md[39m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [43D[32ml[32ms[39m[39m [32me[32mx[32mit[39m[32ms[32me[32mr[32mv[32mice[39m apache2 start[21D[32ml[32ms[39m[39m [39m [39m [39m [39m               [19D[32mc[32mp[39m [4m/home/kali/Desktop/login.html[24m [4m/var/www/html[24m[46D[32me[32mx[32mi[24m[32mt[39m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [42D[32ml[32ms[39m[39m [39m [32mc[32mp[39m [4m/home/kali/Desktop/login.html[24m [4m/var/www/html[24m[46D[32me[32mx[32mi[24m[32mt[39m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [42D[1m[31mc[1m[31ml[1m[31ms[0m[39m[39m [0m[32ml[0m[32ms[39m[0m[39m [32mc[32md[39m Desktop[4mh[4mo[4mm[4me[24m   [32mp[32mw[32md[39m[24m [24m [24m [24m [32ml[32ms[39m[39m [32ml[39m[39m [32ml[32ms[39m[32mp[32mw[32md[39m[32me[32mx[32mi[32mt[39m[32mn[32mc[39m[39m [35m-[35mw[39m 3 192.168.56.102 1234 [1m[34m<[0m[39m sbd.exe[37D[32ml[32ms[39m [39m [39m                        [0m[39m         [35D[32mc[32md[39m [4m/var/www/html[24m[16D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [14D[4m[32ms[4m[32mu[4m[32mdo[24m[39m [32mapt[39m get install ncat[18D[32mt[32m-[32mg[32me[32mt[39m[13C[25D[5P[20C     [20D[32mi[32mf[32mc[32mo[32mn[32mf[32mi[32mg[39m            [12D[8D[32mc[32ml[32me[32ma[32mr[39m[39m [39m [39m [32mi[32mf[32mc[32mo[32mn[32mfig[39m[8D[32mc[32ml[32me[32ma[32mr[39m[39m [39m [39m [32me[32mx[32mi[32mt[39m[39m [32ml[32ms[39m[39m [39m [32mm[32mv[39m wget.exe ncat.exe[20D[32ma[32mp[32mt[39m install rename  [18D[1m[31mr[1m[31me[1m[31mn[1m[31ma[1m[31mm[1m[31me[0m[39m wget.exe ncat.exe[24D[0m[32ml[0m[32ms[39m[0m[39m [0m[39m [0m[39m [0m[39m                   [22D[32mc[32mp[39m [4m/usr/share/windows-resources/binaries/wget.exe[24m [4m/var/www/html[24m[63D[32ml[32mo[32mc[24m[32ma[24m[32mt[24m[32me[39m[24m [24mw[24mg[24me[24mt[24m.[24me[24mx[24me[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [48D[8D.exe    nc.exe-w   w.exe.exe  wget.exe[15D[32mc[32mp[39m[39m [39m[4m/[39m[4mu[39m[4ms[4mr[4m/[4ms[4mh[4ma[4mr[4me[4m/[4mw[4mindows-resources/binaries/wget.exe[24m [4m/var/www/html[24m[63D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [61D[1m[31mr[1m[31me[1m[31mname[0m[39m wget.exe ncat.exe[24D[0m[32ma[0m[32mp[0m[32mt[39m[0m[39m [0m[39mi[0m[39mnstall rename      [18D[32mm[32mv[39m[39m wget.exe ncat.exe[20D[32ml[32ms[39m                  [18D[32me[32mx[32mit[39m[32mc[32ml[32me[32ma[32mr[39m[32mi[32mf[32mc[32mo[32mn[32mfig[39m[8D[32ma[32mp[32mt[32m-[32mg[32me[32mt[39m[39m install ncat[20D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m[39m [32ma[32mp[32mt[32m-[32mg[32me[32mt[39m install ncat[18D[32mt[39m[39m [39mg[39me[39mt[13C[25D[24m[32ml[24m[32ms[39m[24m[39m [24m[39m  [39m [39m [39m                  [23D[32mc[32md[39m [4m/var/www/html[24m[16D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [14D[32mn[32mc[39m [35m-w[39m 3 192.168.56.102 1234 [1m[34m<[0m[39m sbd.exe[37D[32me[32mx[32mi[32mt[39m[39m                        [0m[39m         [33D[32mp[32mw[32md[39m[39m [32me[32mx[32mi[32mt[39m[32mn[32mc[39m[39m [35m-[35mw[39m 3 192.168.56.102 1234 [1m[34m<[0m[39m sbd.exe[37D[32ml[32ms[39m [39m [39m                        [0m[39m         [35D[32mc[32md[39m [4m/var/www/html[24m[16D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [14D[32mn[32mc[39m [35m-w[39m 3 192.168.56.102 1234 [1m[34m<[0m[39m sbd.exe[37D[32me[32mx[32mi[32mt[39m[39m                        [0m[39m         [33D[32mp[32mw[32md[39m[39m [32ml[32ms[39m[39m [32ml[39m[39m [32ml[32ms[39m[32mp[32mw[32md[39m[32mc[32md[39m[39m [4mhome[24m[24mD[24me[24ms[24mktop[10D[32ml[32ms[39m        [8D[32mc[32md[39m Desktop[4mh[4mo[4mm[4me[24m   [24mD[24me[24ms[24mktop[10D[32ml[32ms[39m        [8D[1m[31mc[1m[31ml[1m[31ms[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[32mc[32mp[39m[39m [39m[4m/[4mhome/kali/Desktop/login.html[24m [4m/var/www/html[24m[46D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [44D[32me[32mx[32mit[39m[32ml[32ms[39m[39m [39m [32mc[32mp[39m [4m/home/kali/Desktop/login.html[24m [4m/var/www/html[24m[46D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [44D[32me[32mx[32mit[39m[32mc[32mp[39m[39m [39m[4m/[4mhome/kali/Desktop/login.html[24m [4m/var/www/html[24m[46D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [44D[32ms[32me[32mrvice[39m apache2 start[21D[32me[32mx[32mi[32mt[39m[39m [39m [39m               [17D[32ml[32ms[39m[39m [39m [32mp[32mw[32md[39m[32mc[32mp[39m[39m [4m/home/kali/Desktop/login.html[24m [4m/var/www/html[24m[46D[32mc[32md[39m[2C[30P[12C                              [30D[16D[32ml[32ms[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [14D[32ms[32mc[32mript[39m [35m-af[39m [35m--timing=wireshark_timing_2.txt[39m wireshark_3.log[58D[32mr[32mm[39m[40P[16C                                        [40Dtiming_2.txt[25D[32ml[32ms[39m                       [23D[32ms[32mc[32mript[39m [35m-af[39m [35m--timing=wireshark_timing_3.txt[39m wireshark_3.log[58D[32me[32mx[32mi[32mt[39m[39m [39m  [39m [39m [39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                 [54D[32mc[32ml[32me[32ma[32mr[39m[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m[39m [32mapt[39m install gvm [35m-y[39m[23D[24m[32me[24m[32mx[24m[32mi[24m[32mt[39m [39m [39m [39m              [39m [39m [19D[32mg[32mv[32mm[32m-[32mstart[39m[9D[32ma[32mp[32mt[39m[39m [39mi[39mn[39ms[39mt[39mall gvm[15D[32me[32mx[32mi[32mt[39m           [11D[32mg[32mv[32mm[32m-[32msetup[39m[9D[32me[32mx[32mi[32mt[39m[39m [39m [39m [39m [39m [32mg[32mv[32mm[32m-[32mstart[39m[9D[32me[32mx[32mi[32mt[39m[39m [39m [39m [39m [39m [32mp[32mw[32md[39m[39m [32me[32mx[32mi[32mt[39m[32mg[32mv[32mm[32m-[32mstart[39m[9D[32mi[32mf[32mc[32mo[32mn[32mf[32mi[32mg[39m[39m [8D[32ml[32ms[39m[39m [39m [39m [39m [39m [39m [32mp[32mw[32md[39m[32me[32mx[32mi[32mt[39m[32mp[32mw[32md[39m[39m [32mc[32md[39m[39m [4m..[24m[4m/[4mh[4mome/[24m[4m/[4mk[24m[4mk[4mali[1m[4m/[0m[24m[0m[4m/[4mD[24m[4mD[4me[24m[4me[4msktop[1m[4m/[0m[24m[4mp[24m[0m[24m [?1l>[?2004l
+[J                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m.[39m[39m[4m.[4m/[24m[4m.[4m/[4mi[24m[4mi[4mp[24m[24m[32m.[24m[32m/[24m[32mi[24m[32mp[32mtables-counters.sh[39m[1m [0m[0m 192.168.56.102[?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[4mi[24m[4mi[24m[38;2;153;153;153mfconfig[39m[24m[32mi[32mp[39m[39m [39m [39m [39m [39m [39m [39m[4mi[39m[4mp[4mt[24m[4mt[4ma[24m[4ma[4mb[24m[4mb[4ml[24m[4ml[4me[24m[24m[32mi[24m[32mp[24m[32mt[24m[32ma[24m[32mb[24m[32ml[24m[32me[32ms[39m [35m-[39m[35m-[35mv[39m[35mv[35mn[39m [35m-[39m[35m-[35mL[39m[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [32miptables[39m [35m-vn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mc[32md[39m[39m [39m[4m/[39m[4mh[39m[4mo[39m[4mm[39m[4me[39m[4m/[39m[4mk[39m[4ma[39m[4ml[39m[4mi[39m[4m/[39m[4mD[39m[4me[39m[4ms[39m[4mk[39m[4mt[39m[4mo[39m[4mp[24m[39m                [16D[18D[4m.[4m.[24m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [16D[4m/[4mh[4mome/kali/Desktop[24m[21D[32m.[32m/[32mi[24m[32mp[24m[32mt[24m[32ma[24m[32mb[24m[32ml[24m[32me[24m[32ms[24m[32m-[24m[32mc[24m[32mo[24m[32mu[24m[32mn[24m[32mt[24m[32me[24m[32mr[24m[32ms[24m[32m.[24m[32ms[32mh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mc[32md[39m[39m [39m[4m/[39m[4mh[39m[4mo[39m[4mm[39m[4me[39m[4m/[39m[4mk[39m[4ma[39m[4ml[39m[4mi[39m[4m/[39m[4mD[39m[4me[39m[4ms[39m[4mk[39m[4mt[39m[4mo[39m[4mp[24m[39m                [16D[18D[4m.[4m.[24m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [16D[4m/[4mh[4mome/kali/Desktop[24m[21D[32m.[32m/[32mi[24m[32mp[24m[32mt[24m[32ma[24m[32mb[24m[32ml[24m[32me[24m[32ms[24m[32m-[24m[32mc[24m[32mo[24m[32mu[24m[32mn[24m[32mt[24m[32me[24m[32mr[24m[32ms[24m[32m.[24m[32ms[32mh[39m 192.168.56.102[?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[4mn[24m[4mn[24m[38;2;153;153;153mc -w 3 192.168.56.102 1234 < sbd.exe[39m[36D[24m[32mn[32mm[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [35D[39m[4mn[39m[4mm[4ma[24m[24m[32mn[24m[32mm[24m[32ma[32mp[39m [35m-[39m[35m-[35ms[39m[35ms[35mT[39m [35m-[39m[35m-[35mn[39m [35m-[39m[35m-[35mv[39m [35m-[39m[35m-[35m-[39m[35m-[35mt[39m[35mt[35mo[39m[35mo[35mp[39m[35mp[35m-[39m[35m-[35mp[39m[35mp[35mo[39m[35mo[35mr[39m[35mr[35mt[39m[35mt[35ms[39m[35ms[35m=[39m[35m=[35m2[39m[35m2[35m0[39m[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:05 EDT
+Read data files from: /usr/bin/../share/nmap
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.02 seconds
+           Raw packets sent: 0 (0B) | Rcvd: 0 (0B)
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:05 EDT
+Initiating ARP Ping Scan at 20:05
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:05, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:05
+Scanning 192.168.56.102 [20 ports]
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Completed Connect Scan at 20:05, 0.00s elapsed (20 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00043s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+53/tcp   closed domain
+80/tcp   closed http
+110/tcp  closed pop3
+111/tcp  closed rpcbind
+135/tcp  open   msrpc
+139/tcp  open   netbios-ssn
+143/tcp  closed imap
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+993/tcp  closed imaps
+995/tcp  closed pop3s
+1723/tcp closed pptp
+3306/tcp closed mysql
+3389/tcp closed ms-wbt-server
+5900/tcp closed vnc
+8080/tcp closed http-proxy
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.12 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[14D              [15D[29D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[39m [39m1[39m9[39m2[39m.[39m1[39m68.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   20   880 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   28  1616 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[15D[39m [39m [39m [39m [39m [39m [39m [39m  [39m [39m [39m  [39m [39m [15D[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[14D              [15D[29D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[39m [39m1[39m9[39m2[39m.[39m1[39m68.56.102[37D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[39m [35m-[35mn[39m[39m [35m-[35mv[39m[39m [35m-[35m-[35mt[35mo[35mp[35m-[35mp[35mo[35mr[35mt[35ms[35m=[35m2[35m0[39m        [8D[29D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[39m [39m1[39m9[39m2[39m.[39m1[39m68.56.102[?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m./iptables-counters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:12 EDT
+Initiating ARP Ping Scan at 20:12
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:12, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:12
+Scanning 192.168.56.102 [20 ports]
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Completed Connect Scan at 20:12, 2.73s elapsed (20 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.33s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+53/tcp   closed domain
+80/tcp   closed http
+110/tcp  closed pop3
+111/tcp  closed rpcbind
+135/tcp  open   msrpc
+139/tcp  open   netbios-ssn
+143/tcp  closed imap
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+993/tcp  closed imaps
+995/tcp  closed pop3s
+1723/tcp closed pptp
+3306/tcp closed mysql
+3389/tcp closed ms-wbt-server
+5900/tcp closed vnc
+8080/tcp closed http-proxy
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.83 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[44D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[7P[15C       [37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   23  1040 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   42  2416 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   23  1040 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   42  2416 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:12 EDT
+Initiating ARP Ping Scan at 20:12
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:12, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:12
+Scanning 192.168.56.102 [20 ports]
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Completed Connect Scan at 20:12, 0.00s elapsed (20 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00037s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+53/tcp   closed domain
+80/tcp   closed http
+110/tcp  closed pop3
+111/tcp  closed rpcbind
+135/tcp  open   msrpc
+139/tcp  open   netbios-ssn
+143/tcp  closed imap
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+993/tcp  closed imaps
+995/tcp  closed pop3s
+1723/tcp closed pptp
+3306/tcp closed mysql
+3389/tcp closed ms-wbt-server
+5900/tcp closed vnc
+8080/tcp closed http-proxy
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   43  1920 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   70  4032 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   43  1920 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   70  4032 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[44D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[7P[15C       [?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m./iptables-counters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[39m [39m [39m [39m [39m [39m [39m [39m  [39m [39m [39m  [39m [39m [15D[?1l>[?2004l
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:12 EDT
+Initiating ARP Ping Scan at 20:12
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:12, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:12
+Scanning 192.168.56.102 [20 ports]
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 139/tcp on 192.168.56.102
+Completed Connect Scan at 20:12, 0.00s elapsed (20 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00036s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+53/tcp   closed domain
+80/tcp   closed http
+110/tcp  closed pop3
+111/tcp  closed rpcbind
+135/tcp  open   msrpc
+139/tcp  open   netbios-ssn
+143/tcp  closed imap
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+993/tcp  closed imaps
+995/tcp  closed pop3s
+1723/tcp closed pptp
+3306/tcp closed mysql
+3389/tcp closed ms-wbt-server
+5900/tcp closed vnc
+8080/tcp closed http-proxy
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.11 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   20   880 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   28  1616 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[4mc[24m[4mc[24m[38;2;153;153;153md /home/kali/Desktop[39m[20D[24m[1m[31mc[1m[31ml[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[38;2;153;153;153mear[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[?2004l
+[H[2J[3J                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mclear[39m[32mi[32mp[32mt[32ma[32mb[32mles[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[35m2[39m[P[15C [16D[35m=[39m[P[15C [16D[35m=[35m1[39m 192.168.56.102[15D[35m1[35m0[39m 192.168.56.102[15D[35m0[35m0[39m 192.168.56.102[15D[35m0[35m0[39m 192.168.56.102[15D[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:12 EDT
+Initiating ARP Ping Scan at 20:12
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:12, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:12
+Scanning 192.168.56.102 [1000 ports]
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 49154/tcp on 192.168.56.102
+Discovered open port 49155/tcp on 192.168.56.102
+Discovered open port 49152/tcp on 192.168.56.102
+Discovered open port 49158/tcp on 192.168.56.102
+Discovered open port 49156/tcp on 192.168.56.102
+Discovered open port 49153/tcp on 192.168.56.102
+Completed Connect Scan at 20:12, 2.23s elapsed (1000 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00033s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49158/tcp open  unknown
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.34 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=1000[39m 192.168.56.102[46D[32mc[32ml[32me[32ma[32mr[39m[39m [39m [39m  [39m [39m  [39m [39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [41D[32mi[32mp[32mt[32ma[32mb[32mles[39m [35m-vn[39m [35m-L[39m[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1020 41080 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1310 78376 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=1000[39m 192.168.56.102[46D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [31D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=1000[39m 192.168.56.102[46D[32mc[32ml[32me[32ma[32mr[39m[39m [39m [39m  [39m [39m  [39m [39m  [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [41D[32mi[32mp[32mt[32ma[32mb[32mles[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m./iptables-counters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=1000[39m 192.168.56.102[P[16C [16D[P[16C [16D[35m1[39m[P[15C [16D[35m=[39m[P[15C [16D[35ms[39m[P[15C [16D[35mt[39m[P[15C [16D[35mr[39m[P[15C [16D[35mo[39m[P[15C [16D[35mp[39m[P[15C [16D[35m-[39m[P[15C [16D[35mp[39m[P[15C [16D[35mo[39m[P[15C [16D[35mt[39m[P[15C [16D[35m-[39m[P[15C [16D[P[16C [16D[P[15C [16D[P[14C [15D[P[13C [14D[P[12C [13D[P[11C [12D[P[10C [11D[P[9C [10D8.56.102 [9D.56.102 [8D56.102 6.102 .102 102 02 2  [38;2;153;153;153m--top-ports=1000 192.168.56.102[39m[31D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [32D[38;2;153;153;153m --top-ports=1000 192.168.56.102[39m[32D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [33D[38;2;153;153;153mv --top-ports=1000 192.168.56.102[39m[33D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [34D[38;2;153;153;153m-v --top-ports=1000 192.168.56.102[39m[34D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [35D[38;2;153;153;153m -v --top-ports=1000 192.168.56.102[39m[35D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [36D[38;2;153;153;153mn -v --top-ports=1000 192.168.56.102[39m[36D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [37D[38;2;153;153;153m-n -v --top-ports=1000 192.168.56.102[39m[37D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [38D[38;2;153;153;153m -n -v --top-ports=1000 192.168.56.102[39m[38D[35ms[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39D[38;2;153;153;153mT -n -v --top-ports=1000 192.168.56.102[39m[39D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [40D[38;2;153;153;153msT -n -v --top-ports=1000 192.168.56.102[39m[40D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [41D[38;2;153;153;153m-sT -n -v --top-ports=1000 192.168.56.102[39m[41D[35m-[39m[35m-[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39D[35m-[35mh[39m[35mh[35me[39m[35me[35ml[39m[35ml[35mp[39m[?1l>[?2004l
+Nmap 7.92 ( https://nmap.org )
+Usage: nmap [Scan Type(s)] [Options] {target specification}
+TARGET SPECIFICATION:
+  Can pass hostnames, IP addresses, networks, etc.
+  Ex: scanme.nmap.org, microsoft.com/24, 192.168.0.1; 10.0.0-255.1-254
+  -iL <inputfilename>: Input from list of hosts/networks
+  -iR <num hosts>: Choose random targets
+  --exclude <host1[,host2][,host3],...>: Exclude hosts/networks
+  --excludefile <exclude_file>: Exclude list from file
+HOST DISCOVERY:
+  -sL: List Scan - simply list targets to scan
+  -sn: Ping Scan - disable port scan
+  -Pn: Treat all hosts as online -- skip host discovery
+  -PS/PA/PU/PY[portlist]: TCP SYN/ACK, UDP or SCTP discovery to given ports
+  -PE/PP/PM: ICMP echo, timestamp, and netmask request discovery probes
+  -PO[protocol list]: IP Protocol Ping
+  -n/-R: Never do DNS resolution/Always resolve [default: sometimes]
+  --dns-servers <serv1[,serv2],...>: Specify custom DNS servers
+  --system-dns: Use OS's DNS resolver
+  --traceroute: Trace hop path to each host
+SCAN TECHNIQUES:
+  -sS/sT/sA/sW/sM: TCP SYN/Connect()/ACK/Window/Maimon scans
+  -sU: UDP Scan
+  -sN/sF/sX: TCP Null, FIN, and Xmas scans
+  --scanflags <flags>: Customize TCP scan flags
+  -sI <zombie host[:probeport]>: Idle scan
+  -sY/sZ: SCTP INIT/COOKIE-ECHO scans
+  -sO: IP protocol scan
+  -b <FTP relay host>: FTP bounce scan
+PORT SPECIFICATION AND SCAN ORDER:
+  -p <port ranges>: Only scan specified ports
+    Ex: -p22; -p1-65535; -p U:53,111,137,T:21-25,80,139,8080,S:9
+  --exclude-ports <port ranges>: Exclude the specified ports from scanning
+  -F: Fast mode - Scan fewer ports than the default scan
+  -r: Scan ports consecutively - don't randomize
+  --top-ports <number>: Scan <number> most common ports
+  --port-ratio <ratio>: Scan ports more common than <ratio>
+SERVICE/VERSION DETECTION:
+  -sV: Probe open ports to determine service/version info
+  --version-intensity <level>: Set from 0 (light) to 9 (try all probes)
+  --version-light: Limit to most likely probes (intensity 2)
+  --version-all: Try every single probe (intensity 9)
+  --version-trace: Show detailed version scan activity (for debugging)
+SCRIPT SCAN:
+  -sC: equivalent to --script=default
+  --script=<Lua scripts>: <Lua scripts> is a comma separated list of
+           directories, script-files or script-categories
+  --script-args=<n1=v1,[n2=v2,...]>: provide arguments to scripts
+  --script-args-file=filename: provide NSE script args in a file
+  --script-trace: Show all data sent and received
+  --script-updatedb: Update the script database.
+  --script-help=<Lua scripts>: Show help about scripts.
+           <Lua scripts> is a comma-separated list of script-files or
+           script-categories.
+OS DETECTION:
+  -O: Enable OS detection
+  --osscan-limit: Limit OS detection to promising targets
+  --osscan-guess: Guess OS more aggressively
+TIMING AND PERFORMANCE:
+  Options which take <time> are in seconds, or append 'ms' (milliseconds),
+  's' (seconds), 'm' (minutes), or 'h' (hours) to the value (e.g. 30m).
+  -T<0-5>: Set timing template (higher is faster)
+  --min-hostgroup/max-hostgroup <size>: Parallel host scan group sizes
+  --min-parallelism/max-parallelism <numprobes>: Probe parallelization
+  --min-rtt-timeout/max-rtt-timeout/initial-rtt-timeout <time>: Specifies
+      probe round trip time.
+  --max-retries <tries>: Caps number of port scan probe retransmissions.
+  --host-timeout <time>: Give up on target after this long
+  --scan-delay/--max-scan-delay <time>: Adjust delay between probes
+  --min-rate <number>: Send packets no slower than <number> per second
+  --max-rate <number>: Send packets no faster than <number> per second
+FIREWALL/IDS EVASION AND SPOOFING:
+  -f; --mtu <val>: fragment packets (optionally w/given MTU)
+  -D <decoy1,decoy2[,ME],...>: Cloak a scan with decoys
+  -S <IP_Address>: Spoof source address
+  -e <iface>: Use specified interface
+  -g/--source-port <portnum>: Use given port number
+  --proxies <url1,[url2],...>: Relay connections through HTTP/SOCKS4 proxies
+  --data <hex string>: Append a custom payload to sent packets
+  --data-string <string>: Append a custom ASCII string to sent packets
+  --data-length <num>: Append random data to sent packets
+  --ip-options <options>: Send packets with specified ip options
+  --ttl <val>: Set IP time-to-live field
+  --spoof-mac <mac address/prefix/vendor name>: Spoof your MAC address
+  --badsum: Send packets with a bogus TCP/UDP/SCTP checksum
+OUTPUT:
+  -oN/-oX/-oS/-oG <file>: Output scan in normal, XML, s|<rIpt kIddi3,
+     and Grepable format, respectively, to the given filename.
+  -oA <basename>: Output in the three major formats at once
+  -v: Increase verbosity level (use -vv or more for greater effect)
+  -d: Increase debugging level (use -dd or more for greater effect)
+  --reason: Display the reason a port is in a particular state
+  --open: Only show open (or possibly open) ports
+  --packet-trace: Show all packets sent and received
+  --iflist: Print host interfaces and routes (for debugging)
+  --append-output: Append to rather than clobber specified output files
+  --resume <filename>: Resume an aborted scan
+  --noninteractive: Disable runtime interactions via keyboard
+  --stylesheet <path/URL>: XSL stylesheet to transform XML output to HTML
+  --webxml: Reference stylesheet from Nmap.Org for more portable XML
+  --no-stylesheet: Prevent associating of XSL stylesheet w/XML output
+MISC:
+  -6: Enable IPv6 scanning
+  -A: Enable OS detection, version detection, script scanning, and traceroute
+  --datadir <dirname>: Specify custom Nmap data file location
+  --send-eth/--send-ip: Send using raw ethernet frames or IP packets
+  --privileged: Assume that the user is fully privileged
+  --unprivileged: Assume the user lacks raw socket privileges
+  -V: Print version number
+  -h: Print this help summary page.
+EXAMPLES:
+  nmap -v -A scanme.nmap.org
+  nmap -v -sn 192.168.0.0/16 10.0.0.0/8
+  nmap -v -iR 10000 -Pn -p 80
+SEE THE MAN PAGE (https://nmap.org/book/man.html) FOR MORE OPTIONS AND EXAMPLES
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m--help[39m[11D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=1000[39m 192.168.56.102 [38;2;153;153;153m2[39m [39m [38;2;153;153;153m02[39m [39m [39m [38;2;153;153;153m102[39m [39m [39m [39m [38;2;153;153;153m.102[39m [39m [39m [39m [39m [38;2;153;153;153m6.102[39m [39m [39m [39m [39m [39m [38;2;153;153;153m56.102[39m [39m [39m [39m [39m [39m [39m [38;2;153;153;153m.56.102[39m [39m [39m [39m [39m [39m [39m [39m [8D[38;2;153;153;153m8.56.102[39m[8D [39m [39m [39m [39m [39m [39m [39m [39m [9D[38;2;153;153;153m68.56.102[39m[9D [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[38;2;153;153;153m168.56.102[39m[10D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[38;2;153;153;153m.168.56.102[39m[11D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[38;2;153;153;153m2.168.56.102[39m[12D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13D[38;2;153;153;153m92.168.56.102[39m[13D [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[38;2;153;153;153m192.168.56.102[39m[14D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [15D[38;2;153;153;153m 192.168.56.102[39m[15D[35m0[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[38;2;153;153;153m0 192.168.56.102[39m[16D[35m0[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[38;2;153;153;153m00 192.168.56.102[39m[17D[35m1[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[38;2;153;153;153m000 192.168.56.102[39m[18D[35m=[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [19D[38;2;153;153;153m1000 192.168.56.102[39m[19D[35ms[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [20D[38;2;153;153;153m=1000 192.168.56.102[39m[20D[35mt[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21D[38;2;153;153;153ms=1000 192.168.56.102[39m[21D[35mr[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [22D[38;2;153;153;153mts=1000 192.168.56.102[39m[22D[35mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [23D[38;2;153;153;153mrts=1000 192.168.56.102[39m[23D[35mp[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [24D[38;2;153;153;153morts=1000 192.168.56.102[39m[24D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [25D[38;2;153;153;153mports=1000 192.168.56.102[39m[25D[35mp[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [26D[38;2;153;153;153m-ports=1000 192.168.56.102[39m[26D[35mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [27D[38;2;153;153;153mp-ports=1000 192.168.56.102[39m[27D[35mt[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D[38;2;153;153;153mop-ports=1000 192.168.56.102[39m[28D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[38;2;153;153;153mtop-ports=1000 192.168.56.102[39m[29D[35m-[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D[38;2;153;153;153m-top-ports=1000 192.168.56.102[39m[30D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[38;2;153;153;153m--top-ports=1000 192.168.56.102[39m[31D[39m1[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D92.168.56.102[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:32 EDT
+Initiating ARP Ping Scan at 20:32
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:32, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:32
+Scanning 192.168.56.102 [1000 ports]
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 49155/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 49154/tcp on 192.168.56.102
+Discovered open port 49153/tcp on 192.168.56.102
+Discovered open port 49158/tcp on 192.168.56.102
+Discovered open port 49152/tcp on 192.168.56.102
+Discovered open port 49156/tcp on 192.168.56.102
+Completed Connect Scan at 20:32, 2.05s elapsed (1000 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00039s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49158/tcp open  unknown
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.15 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m 192.168.56.102[23D[35m-[35mh[35me[35ml[35mp[39m [39m [39m                [18D[11D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m [35m-L[39m[?1l>[?2004l
+Chain INPUT (policy ACCEPT 6 packets, 2769 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1004 41053 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 4 packets, 1312 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1254 75060 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m 192.168.56.102[35m-[35m1[35m9[35m2[35m.[35m1[35m6[35m8[35m.[35m5[35m6[35m.[35m1[35m0[35m2[39m[14D[35mT[35m1[35m9[35m2[35m.[35m1[35m6[35m8[35m.[35m5[35m6[35m.[35m1[35m0[35m2[39m[14D[35m4[35m1[35m9[35m2[35m.[35m1[35m6[35m8[35m.[35m5[35m6[35m.[35m1[35m0[35m2[39m[14D[35m4[39m[39m [39m1[39m9[39m2[39m.[39m1[39m6[39m8[39m.[39m5[39m6[39m.[39m1[39m02[14D[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:44 EDT
+Initiating ARP Ping Scan at 20:44
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:44, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:44
+Scanning 192.168.56.102 [1000 ports]
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 49153/tcp on 192.168.56.102
+Discovered open port 49155/tcp on 192.168.56.102
+Discovered open port 49154/tcp on 192.168.56.102
+Discovered open port 49156/tcp on 192.168.56.102
+Discovered open port 49152/tcp on 192.168.56.102
+Discovered open port 49158/tcp on 192.168.56.102
+Completed Connect Scan at 20:44, 2.15s elapsed (1000 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.0011s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49158/tcp open  unknown
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.26 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m-T4[39m 192.168.56.102[33D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m                [18D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m 192.168.56.102[23D[35m-[35mh[35me[35ml[35mp[39m [39m [39m                [18D[11D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m./iptables-counters.sh[39m 192.168.56.102[37D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[39m [35m-[35mn[39m[39m [35m-[35mv[39m[39m [35m-[35mT[35m4[39m[4P[15C    [?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:44 EDT
+Initiating ARP Ping Scan at 20:44
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:44, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:44
+Scanning 192.168.56.102 [1000 ports]
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 49154/tcp on 192.168.56.102
+Discovered open port 49153/tcp on 192.168.56.102
+Discovered open port 49152/tcp on 192.168.56.102
+Discovered open port 49156/tcp on 192.168.56.102
+Discovered open port 49155/tcp on 192.168.56.102
+Discovered open port 49158/tcp on 192.168.56.102
+Completed Connect Scan at 20:44, 2.03s elapsed (1000 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00030s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49158/tcp open  unknown
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.13 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m-T4[39m 192.168.56.102[33D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m 192.168.56.102[37D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[39m [35m-[35mn[39m[39m [35m-[35mv[39m[39m [35m-[35mT[35m4[39m[4P[15C    [33D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m                [18D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m 192.168.56.102[23D[35m-[35mh[35me[35ml[35mp[39m [39m [39m                [18D[11D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1000 40200 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1288 77120 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[?2004l
+                                                                             ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [4mc[24m[4mc[24m[38;2;153;153;153mlear[39m[24m[1m[31mc[1m[31ml[0m[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[32mr[39m[?1l>[?2004l
+[H[2J[3J                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mclear[39m[32mi[32mp[32mt[32ma[32mb[32mles[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m-T4[39m 192.168.56.102[33D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m 192.168.56.102[37D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[39m [35m-[35mn[39m[39m [35m-[35mv[39m[39m [35m-[35mT[35m4[39m[4P[15C    [33D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m 192.168.56.102[?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[7m[32mnmap[39m[7m [7m[35m-sT[39m[7m [7m[35m-n[39m[7m [7m[35m-v[39m[7m [7m[35m--top-ports=20[39m[7m 192.168.56.102[27m[44D[27m[32mn[27m[32mm[27m[32ma[27m[32mp[39m[27m [27m[35m-[27m[35ms[27m[35mT[39m[27m [27m[35m-[27m[35mn[39m[27m [27m[35m-[27m[35mv[39m[27m [27m[35m-[27m[35m-[27m[35mt[27m[35mo[27m[35mp[27m[35m-[27m[35mp[27m[35mo[27m[35mr[27m[35mt[27m[35ms[27m[35m=[27m[35m2[27m[35m0[39m[27m [27m1[27m9[27m2[27m.[27m1[27m6[27m8[27m.[27m5[27m6[27m.[27m1[27m0[27m2[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:45 EDT
+Initiating ARP Ping Scan at 20:45
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:45, 0.03s elapsed (1 total hosts)
+Initiating Connect Scan at 20:45
+Scanning 192.168.56.102 [20 ports]
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Completed Connect Scan at 20:45, 0.00s elapsed (20 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00036s latency).
+
+PORT     STATE  SERVICE
+21/tcp   closed ftp
+22/tcp   open   ssh
+23/tcp   closed telnet
+25/tcp   closed smtp
+53/tcp   closed domain
+80/tcp   closed http
+110/tcp  closed pop3
+111/tcp  closed rpcbind
+135/tcp  open   msrpc
+139/tcp  open   netbios-ssn
+143/tcp  closed imap
+443/tcp  closed https
+445/tcp  open   microsoft-ds
+993/tcp  closed imaps
+995/tcp  closed pop3s
+1723/tcp closed pptp
+3306/tcp closed mysql
+3389/tcp closed ms-wbt-server
+5900/tcp closed vnc
+8080/tcp closed http-proxy
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 0.10 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=20[39m 192.168.56.102[44D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[7P[15C       [37D[32mc[32ml[32me[32ma[32mr[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [32D[32mi[32mp[32mt[32ma[32mb[32mles[39m [35m-vn[39m [35m-L[39m[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   20   880 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+   28  1616 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[44D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[7P[15C       [?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m./iptables-counters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=20[39m 192.168.56.102[44D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [29D[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [37D[7m[32mnmap[39m[7m [7m[35m-sT[39m[7m [7m[35m-n[39m[7m [7m[35m-v[39m[7m [7m[35m--top-ports=1000[39m[7m 192.168.56.102[27m[46D[27m[32mn[27m[32mm[27m[32ma[27m[32mp[39m[27m [27m[35m-[27m[35ms[27m[35mT[39m[27m [27m[35m-[27m[35mn[39m[27m [27m[35m-[27m[35mv[39m[27m [27m[35m-[27m[35m-[27m[35mt[27m[35mo[27m[35mp[27m[35m-[27m[35mp[27m[35mo[27m[35mr[27m[35mt[27m[35ms[27m[35m=[27m[35m1[27m[35m0[27m[35m0[27m[35m0[39m[27m [27m1[27m9[27m2[27m.[27m1[27m6[27m8[27m.[27m5[27m6[27m.[27m1[27m0[27m2[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:46 EDT
+Initiating ARP Ping Scan at 20:46
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:46, 0.06s elapsed (1 total hosts)
+Initiating Connect Scan at 20:46
+Scanning 192.168.56.102 [1000 ports]
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 49158/tcp on 192.168.56.102
+Discovered open port 49153/tcp on 192.168.56.102
+Discovered open port 49156/tcp on 192.168.56.102
+Discovered open port 49152/tcp on 192.168.56.102
+Discovered open port 49155/tcp on 192.168.56.102
+Discovered open port 49154/tcp on 192.168.56.102
+Completed Connect Scan at 20:46, 2.24s elapsed (1000 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00034s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49158/tcp open  unknown
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.36 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m--top-ports=1000[39m 192.168.56.102[46D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[9P[15C         [9D[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1000 40200 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1300 77840 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=1000[39m 192.168.56.102[46D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m[9P[15C         [9D[?1l>[?2004l
+Remember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m./iptables-counters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m--top-ports=1000[39m 192.168.56.102[46D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [31D[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [37D[7m[32mnmap[39m[7m [7m[35m-sT[39m[7m [7m[35m-n[39m[7m [7m[35m-v[39m[7m [7m[35m-T4[39m[7m 192.168.56.102[27m
+[K[K[A[4C[27m[32mn[27m[32mm[27m[32ma[27m[32mp[39m[27m [27m[35m-[27m[35ms[27m[35mT[39m[27m [27m[35m-[27m[35mn[39m[27m [27m[35m-[27m[35mv[39m[27m [27m[35m-[27m[35mT[27m[35m4[39m[27m [27m1[27m9[27m2[27m.[27m1[27m6[27m8[27m.[27m5[27m6[27m.[27m1[27m0[27m2[1B[?1l>[?2004l
+Starting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:47 EDT
+Initiating ARP Ping Scan at 20:47
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:47, 0.04s elapsed (1 total hosts)
+Initiating Connect Scan at 20:47
+Scanning 192.168.56.102 [1000 ports]
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 49153/tcp on 192.168.56.102
+Discovered open port 49156/tcp on 192.168.56.102
+Discovered open port 49158/tcp on 192.168.56.102
+Discovered open port 49154/tcp on 192.168.56.102
+Discovered open port 49152/tcp on 192.168.56.102
+Discovered open port 49155/tcp on 192.168.56.102
+Completed Connect Scan at 20:47, 1.94s elapsed (1000 total ports)
+Nmap scan report for 192.168.56.102
+Host is up (0.00044s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT      STATE SERVICE
+22/tcp    open  ssh
+135/tcp   open  msrpc
+139/tcp   open  netbios-ssn
+445/tcp   open  microsoft-ds
+49152/tcp open  unknown
+49153/tcp open  unknown
+49154/tcp open  unknown
+49155/tcp open  unknown
+49156/tcp open  unknown
+49158/tcp open  unknown
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.05 seconds
+           Raw packets sent: 1 (28B) | Rcvd: 1 (28B)
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m-T4[39m 192.168.56.102
+[K[K[A[4C[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m 192.168.56.102[1B[K[A[41C[37D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[39m [35m-[35mn[39m[39m [35m-[35mv[39m[39m [35m-[35mT[35m4[39m[4P[15C    [1B[K[K[A[4C[39m [39m [39m [39m  [39m [39m [39m  [39m [39m  [39m [39m  [39m [39m [39m                [1B[K[A[4C[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m-T4[39m 192.168.56.102[1B[K[K[A[4C[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m 192.168.56.102[1B[K[A[41C[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l[1BChain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1001 40260 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1288 77100 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m-T4[39m 192.168.56.102
+[K[K[A[4C[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mt[32me[32mr[32ms[32m.[32ms[32mh[39m 192.168.56.102[1B[K[A[41C[?1l>[?2004l[1BRemember to rerun ./iptables-counters.sh before each different scan
+To view usage: run iptables -vn -L
+To clear all iptables rules when done: iptables -Z && iptables -F
+                                              ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32m./iptables-counters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+    0     0 ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                              ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m-T4[39m 192.168.56.102
+[K[K[A[37C[6C[1B[K[A[37C[1B[K[A[37C[1B[K[A[37C[1C[35m-[35mT[35m4[39m 192.168.56.102[1B[K[A[20C[35mO[35m-[35mT[35m4[39m 192.168.56.102[18D[35mO[39m[39m [35m-[35mT[35m4[39m 192.168.56.102[18D[1C[35m-[35mT[35m4[39m 192.168.56.102[18D[35mS[35m-[35mT[35m4[39m 192.168.56.102[18D[P[18C [19D[35ms[35m-[35mT[35m4[39m 192.168.56.102[18D[35mV[35m-[35mT[35m4[39m 192.168.56.102[18D[35mV[39m[39m [35m-[35mT[35m4[39m 192.168.56.102[18D[?1l>[?2004l[1BStarting Nmap 7.92 ( https://nmap.org ) at 2022-04-06 20:48 EDT
+NSE: Loaded 45 scripts for scanning.
+Initiating ARP Ping Scan at 20:48
+Scanning 192.168.56.102 [1 port]
+Completed ARP Ping Scan at 20:48, 0.03s elapsed (1 total hosts)
+Initiating Connect Scan at 20:48
+Scanning 192.168.56.102 [1000 ports]
+Discovered open port 135/tcp on 192.168.56.102
+Discovered open port 139/tcp on 192.168.56.102
+Discovered open port 22/tcp on 192.168.56.102
+Discovered open port 445/tcp on 192.168.56.102
+Discovered open port 49152/tcp on 192.168.56.102
+Discovered open port 49153/tcp on 192.168.56.102
+Discovered open port 49158/tcp on 192.168.56.102
+Discovered open port 49155/tcp on 192.168.56.102
+Discovered open port 49156/tcp on 192.168.56.102
+Discovered open port 49154/tcp on 192.168.56.102
+Completed Connect Scan at 20:48, 2.25s elapsed (1000 total ports)
+Initiating Service scan at 20:48
+Scanning 10 services on 192.168.56.102
+Service scan Timing: About 50.00% done; ETC: 20:50 (0:00:54 remaining)
+Completed Service scan at 20:49, 58.55s elapsed (10 services on 1 host)
+Initiating OS detection (try #1) against 192.168.56.102
+NSE: Script scanning 192.168.56.102.
+Initiating NSE at 20:49
+Completed NSE at 20:49, 0.01s elapsed
+Initiating NSE at 20:49
+Completed NSE at 20:49, 0.00s elapsed
+Nmap scan report for 192.168.56.102
+Host is up (0.00035s latency).
+Not shown: 990 closed tcp ports (conn-refused)
+PORT      STATE SERVICE      VERSION
+22/tcp    open  ssh          OpenSSH 6.7 (protocol 2.0)
+135/tcp   open  msrpc        Microsoft Windows RPC
+139/tcp   open  netbios-ssn  Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds Microsoft Windows 7 - 10 microsoft-ds (workgroup: WORKGROUP)
+49152/tcp open  msrpc        Microsoft Windows RPC
+49153/tcp open  msrpc        Microsoft Windows RPC
+49154/tcp open  msrpc        Microsoft Windows RPC
+49155/tcp open  msrpc        Microsoft Windows RPC
+49156/tcp open  msrpc        Microsoft Windows RPC
+49158/tcp open  msrpc        Microsoft Windows RPC
+MAC Address: 08:00:27:81:51:CD (Oracle VirtualBox virtual NIC)
+Device type: general purpose
+Running: Microsoft Windows 2008
+OS CPE: cpe:/o:microsoft:windows_server_2008:r2
+OS details: Microsoft Windows Server 2008 R2
+Uptime guess: 0.045 days (since Wed Apr  6 19:45:40 2022)
+Network Distance: 1 hop
+TCP Sequence Prediction: Difficulty=262 (Good luck!)
+IP ID Sequence Generation: Incremental
+Service Info: Host: IE9WIN7; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 62.16 seconds
+           Raw packets sent: 17 (1.446KB) | Rcvd: 17 (1.358KB)
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mnmap[39m [35m-sT[39m [35m-n[39m [35m-v[39m [35m-O[39m [35m-sV[39m [35m-T4[39m 192.168.56.102[40D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m  [39m [39m [39m  [39m [39m [39m                [25D[15D[32m.[32m/[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[32m-[32mc[32mo[32mu[32mn[32mters.sh[39m 192.168.56.102[37D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m [39m [39m [39m [39m [39m                [22D[?1l>[?2004l
+Chain INPUT (policy ACCEPT 2 packets, 812 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1348 60426 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 1 packets, 328 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1795  111K ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32miptables[39m [35m-vn[39m [35m-L[39m[15D[32mn[32mm[32ma[32mp[39m[39m [35m-[35ms[35mT[39m[2C[35mn[39m[39m [35m-[35mv[39m[39m [35m-O[39m [35m-sV[39m [35m-T4[39m 192.168.56.102[40D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[2C[35mv[35mn[39m[39m [35m-[35mL[39m[39m [39m  [39m [39m [39m  [39m [39m [39m                [25D[15D[39m [39m [39m [39m [39m [39m [39m [39m  [39m [39m [39m  [39m [39m [15D[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [1m[31mg[0m[39m[1m[31mg[0m[39m[38;2;153;153;153mvm-start[39m[8D[1m[31mg[1m[31mv[0m[39m[1m[31mg[1m[31mv[1m[31mm[0m[39m[1m[31mm[1m[31m-[0m[39m[1m[31m-[1m[31ms[0m[39m[1m[31ms[1m[31mt[0m[39m[1m[31mt[1m[31ma[0m[39m[1m[31ma[1m[31mr[0m[39m[8D[0m[32mg[0m[32mv[0m[32mm[0m[32m-[0m[32ms[0m[32mt[0m[32ma[0m[32mr[32mt[39m[?1l>[?2004l
+[01;32m[>][00m Please wait for the GVM services to start.
+[01;32m[>][00m
+[01;32m[>][00m You might need to refresh your browser once it opens.
+[01;32m[>][00m
+[01;32m[>][00m  Web UI (Greenbone Security Assistant): https://127.0.0.1:9392
+
+[0;1;32m●[0m gsad.service - Greenbone Security Assistant daemon (gsad)
+     Loaded: loaded (/lib/systemd/system/gsad.service; disabled; vendor preset: disabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2022-04-06 20:54:27 EDT; 10ms ago
+       Docs: man:gsad(8)
+             https://www.greenbone.net
+    Process: 18066 ExecStart=/usr/sbin/gsad --listen 127.0.0.1 --port 9392 (code=exited, status=0/SUCCESS)
+   Main PID: 18068 (gsad)
+      Tasks: 4 (limit: 4612)
+     Memory: 3.2M
+        CPU: 12ms
+     CGroup: /system.slice/gsad.service
+             ├─[0;38;5;245m18067 /usr/sbin/gsad --listen 127.0.0.1 --port 9392[0m
+             └─[0;38;5;245m18068 /usr/sbin/gsad --listen 127.0.0.1 --port 9392[0m
+
+Apr 06 20:54:27 kali systemd[1]: Starting Greenbone Security Assistant daemon (gsad)...
+Apr 06 20:54:27 kali gsad[18066]: Oops, secure memory pool already initialized
+Apr 06 20:54:27 kali systemd[1]: [0;1;38;5;185m[0;1;39m[0;1;38;5;185mgsad.service: Supervising process 18068 which is not our child. We'll most likely not notice when it exits.[0m
+Apr 06 20:54:27 kali systemd[1]: Started Greenbone Security Assistant daemon (gsad).
+
+[0;1;32m●[0m gvmd.service - Greenbone Vulnerability Manager daemon (gvmd)
+     Loaded: loaded (/lib/systemd/system/gvmd.service; disabled; vendor preset: disabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2022-04-06 20:54:22 EDT; 5s ago
+       Docs: man:gvmd(8)
+    Process: 18016 ExecStart=/usr/sbin/gvmd --osp-vt-update=/run/ospd/ospd.sock --listen-group=_gvm (code=exited, status=0/SUCCESS)
+   Main PID: 18017 (gvmd)
+      Tasks: 1 (limit: 4612)
+     Memory: 127.0M
+        CPU: 484ms
+     CGroup: /system.slice/gvmd.service
+             └─[0;38;5;245m18017 "gvmd: Waiting for incoming connections"[0m
+
+Apr 06 20:54:21 kali systemd[1]: Starting Greenbone Vulnerability Manager daemon (gvmd)...
+Apr 06 20:54:21 kali systemd[1]: gvmd.service: Can't open PID file /run/gvmd/gvmd.pid (yet?) after start: Operation not permitted
+Apr 06 20:54:22 kali systemd[1]: Started Greenbone Vulnerability Manager daemon (gvmd).
+
+[0;1;32m●[0m ospd-openvas.service - OSPd Wrapper for the OpenVAS Scanner (ospd-openvas)
+     Loaded: loaded (/lib/systemd/system/ospd-openvas.service; disabled; vendor preset: disabled)
+     Active: [0;1;32mactive (running)[0m since Wed 2022-04-06 20:54:19 EDT; 8s ago
+       Docs: man:ospd-openvas(8)
+             man:openvas(8)
+    Process: 17976 ExecStart=/usr/bin/ospd-openvas --config /etc/gvm/ospd-openvas.conf --log-config /etc/gvm/ospd-logging.conf --pid-file /run/ospd/ospd-openvas.pid --log-file /var/log/gvm/ospd-openvas.log --lock-file-dir /var/lib/openvas (code=exited, status=0/SUCCESS)
+   Main PID: 17990 (ospd-openvas)
+      Tasks: 4 (limit: 4612)
+     Memory: 29.5M
+        CPU: 157ms
+     CGroup: /system.slice/ospd-openvas.service
+             ├─[0;38;5;245m17990 /usr/bin/python3 /usr/bin/ospd-openvas --config /etc/gvm/ospd-openvas.conf --log-config /etc/gvm/ospd-logging.conf --pid-file /run/ospd/ospd-openvas.pid --log-file /var/log/gvm/ospd-openvas.log --lock-file-dir /var/lib/openvas[0m
+             └─[0;38;5;245m17992 /usr/bin/python3 /usr/bin/ospd-openvas --config /etc/gvm/ospd-openvas.conf --log-config /etc/gvm/ospd-logging.conf --pid-file /run/ospd/ospd-openvas.pid --log-file /var/log/gvm/ospd-openvas.log --lock-file-dir /var/lib/openvas[0m
+
+Apr 06 20:54:19 kali systemd[1]: Starting OSPd Wrapper for the OpenVAS Scanner (ospd-openvas)...
+Apr 06 20:54:19 kali systemd[1]: Started OSPd Wrapper for the OpenVAS Scanner (ospd-openvas).
+
+[01;32m[>][00m Opening Web UI (https://127.0.0.1:9392) in: 5... 4... 3... 2... 1... 
+                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[A[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [1m[31mf[0m[39m[1m[31mf[1m[31mi[0m[39m[1m[31mf[1m[31mi[1m[31mr[0m[39m[1m[31mr[1m[31me[0m[39m[1m[31me[1m[31mf[0m[39m[1m[31mf[1m[31mo[0m[39m[0m[32mf[0m[32mi[0m[32mr[0m[32me[0m[32mf[0m[32mo[32mx[39m https://127.0.0.0 1:9392/ [1m[34m&[0m[39m[?1l>[?2004l
+[1] 19200
+                                                                                                                                                            ]0;root@kali: /home/kali/Desktop
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004hRunning Firefox as root in a regular user's session is not supported.  ($XAUTHORITY is /home/kali/.Xauthority which is owned by kali.)
+
+[1]  + exit 1     firefox https://127.0.0.1:9392/
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m/home/kali/Desktop[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[1m[31me[0m[39m[1m[31me[0m[39m[38;2;153;153;153mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[?1l>[?2004l
+                                                                                                                                                            ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31mf[0m[39m[1m[31mf[0m[39m[38;2;153;153;153mind nc.exe[39m[10D[1m[31mf[1m[31mi[0m[39m[1m[31mf[1m[31mi[1m[31mr[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [8D[1m[31mr[1m[31me[0m[39m[1m[31me[1m[31mf[0m[39m[1m[31mf[1m[31mo[0m[39m[0m[32mf[0m[32mi[0m[32mr[0m[32me[0m[32mf[0m[32mo[32mx[39m https://127.0.0.1:9392 [1m[34m&[0m[39m[?1l>[?2004l
+[1] 19351
+                                                                                                                                                            ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h
+[1]  + done       firefox https://127.0.0.1:9392
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [A[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [32mfirefox[39m https://127.0.0.1:9392 [1m[34m&[0m[39m[32D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m[39m [35m-[35mi[39m                        [0m[39m [25D[24m[32m.[24m[32m/[24m[32mi[24m[32mp[32mt[32ma[32mb[32mles-counters.sh[39m 192.168.56.102[37D[32ml[32ms[39m[39m [35m-[35ml[39m[39m [1m[34m*[0m[39m[39m.[39ms[39mh[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [27D[10D[32m.[32m/[32mi[32mp[32mt[32ma[0m[32mb[32ml[32me[32ms[32m-counters.sh[39m 192.168.56.102[37D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m[39m [35m-[35mi[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [30D[24m[32mf[24m[32mi[24m[32mr[24m[32me[32mf[32mo[32mx[39m https://127.0.0.1:9392 [1m[34m&[0m[39m[32D[39m [39m [39m [39m [39m [39m [39m                         [0m[39m [32D[32mfirefox[39m https://127.0.0.1:9392 [1m[34m&[0m[39m[32D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m[39m [35m-[35mi[39m                        [0m[39m [25D[24m[32m.[24m[32m/[24m[32mi[24m[32mp[32mt[32ma[32mb[32mles-counters.sh[39m 192.168.56.102[37D[32ml[32ms[39m[39m [35m-[35ml[39m[39m [1m[34m*[0m[39m[39m.[39ms[39mh[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m                [27D[10D[32mi[32mf[32mc[32mo[32mn[32mf[0m[32mi[32mg[39m  [8D[32mc[32mh[32mm[32mo[32md[39m[39m [39m+[39mx [4miptables-counters.sh[24m[29D[32mi[32mf[32mc[32mo[32mn[32mf[32mi[32mg[39m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [21D[8D[32ml[32ms[39m[39m [35m-[35ml[39m[39m [1m[34m*[0m[39m[39m.sh[10D[4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m[39m [35m-[0m[35mi[39m   [24m[32mp[24m[32mw[24m[32md[39m[24m[39m  [39m [39m [4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [35m-i[39m[?1l>[?2004l
+[sudo] password for kali: 
+                                                                             ]0;root@kali: ~[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m~[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[32mexit[39m[32mf[32mi[32mr[32me[32mfox[39m https://127.0.0.1:9392/ [1m[34m&[0m[39m[33D[32mg[32mv[32mm[32m-[32ms[32mt[32ma[32mr[32mt[39m                       [0m[39m [24D[9D[32mi[32mp[32mt[32ma[32mb[32ml[32me[32ms[39m[39m [35m-vn[39m [35m-L[39m[?1l>[?2004l
+Chain INPUT (policy ACCEPT 168K packets, 88M bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1371 66145 ACCEPT     all  --  *      *       192.168.56.102       0.0.0.0/0           
+
+Chain FORWARD (policy ACCEPT 0 packets, 0 bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+
+Chain OUTPUT (policy ACCEPT 137K packets, 47M bytes)
+ pkts bytes target     prot opt in     out     source               destination         
+ 1795  111K ACCEPT     all  --  *      *       0.0.0.0/0            192.168.56.102      
+                                                                             ]0;root@kali: ~
+[0m[27m[24m[J[34m┌──([1m[34m[31mroot㉿kali[0m[31m[34m)-[[1m[34m[39m~[0m[34m]
+└─[1m[34m[31m#[0m[31m[39m [K[?1h=[?2004h[1m[31me[0m[39m[1m[31me[0m[39m[38;2;153;153;153mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[?1l>[?2004l
+                                                                             ]0;kali@kali: ~/Desktop
+[0m[27m[24m[J[32m┌──([1m[32m[34mkali㉿kali[0m[34m[32m)-[[1m[32m[39m~/Desktop[0m[32m]
+└─[1m[32m[34m$[0m[34m[39m [K[?1h=[?2004h[1m[31me[0m[39m[1m[31me[0m[39m[38;2;153;153;153mxit[39m[0m[32me[32mx[39m[1m[31me[1m[31mx[1m[31mi[0m[39m[0m[32me[0m[32mx[0m[32mi[32mt[39m[?1l>[?2004l
+
+Script done on 2022-04-06 22:55:44-04:00 [COMMAND_EXIT_CODE="0"]
